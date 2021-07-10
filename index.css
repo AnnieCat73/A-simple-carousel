@@ -1,0 +1,82 @@
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 60%;
+  justify-content: space-around;
+  margin: 2em auto;
+  height: 100vh;
+  background-color: rgba(15, 15, 15, 0.253);
+  border-radius: 3px;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  font-size: 2.7rem;
+  font-size: bold;
+  letter-spacing: .1;
+}
+
+.carousel {
+  display: grid;
+  max-width: 600px;
+  position: relative;
+  
+  box-shadow: 1px 1px 1px 4px rgb(77, 76, 76);
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+  display: none;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  display: block;
+}
+
+
+.carousel .carousel-item img {
+  width: 100%;
+  max-width: 600px;
+  
+}
+
+.carousel .carousel-item-visible {
+  display: block;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel .carousel-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel-actions button {
+  border-radius: 50%;
+  border: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+  margin-left: 20px;
+}
+.carousel .carousel-actions button#carousel-button-next {
+  margin-right: 20px;
+}
+
